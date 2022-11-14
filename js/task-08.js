@@ -12,6 +12,11 @@ function handleSubmit(event) {
     return alert("Будь ласка, заповніть усі поля!");
   }
 
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  const user = {
+    email: email.value,
+    password: password.value,
+  };
+
+  console.log(user);
   event.currentTarget.reset();
 }
